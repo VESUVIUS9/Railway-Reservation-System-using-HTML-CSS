@@ -1,0 +1,235 @@
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>railway reservation</title>
+    <style>
+*{
+box-sizzing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family: 'poppins' , sans-serif;
+}
+
+        #first {
+	 overflow:hidden;
+            background-color: 00ffffff;
+            position:fixed;
+            margin: 1px;
+	    height: 100px;
+	    width:1530px;
+		
+}
+
+.card{
+background: url("12.png") center/cover no-repeat;
+height:330px;
+border-radius:20px;
+opacityr:0.9;
+}
+
+
+ .banner{
+min-height:100vh;
+background:url("123.png") center/cover no-repeat;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:#fff;
+padding-bottom:20px;
+}
+
+
+.menu{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.menu ul li{
+display:inline-block;
+position:relative;
+padding: 8px 12px;
+background:#f2745f;
+border-radius:6px;
+}
+
+.menu{
+flex:1;
+text-align:right;
+}
+
+.menu ul li a{
+color:#fff;
+text-decoration:none;
+font-size:13px;
+}
+
+.menu ul li ::after{
+content:"";
+width:0%;
+height: 2px;
+background: #f44336;
+display:block;
+margin:auto;
+transition:0.5s;
+}
+
+.menu ul li :hover::after{
+width:100%
+}
+
+.content{
+background:#fff;
+height:330px;
+}
+
+.content h2{
+text-align:center;
+color:black;
+margin:1px;
+padding: 2px;
+font-size: 28px;
+}
+.content h3{
+text-align:center;
+color:grey;
+padding: 25px 0 10px 0;
+font-size: 28px;
+}
+
+.card-container{
+display:grid;
+grid-template-columns: 420px 420px;
+border-radius:20px;
+opacity:0.8;
+}
+
+form select , form input{
+display:block;
+width:"100%";
+margin:15px;
+padding : 5px;
+font-size: 15px;
+font-family: 'poppins' , sans-serif;
+outline:none;
+border:none;
+border-bottom: 1px solid #eee;
+font-weight: 300;
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+    color: #9a9a9a;
+}
+form input[type = submit]{
+    color: #fff;
+    background: #f2745f;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+
+    </style>
+</head>
+
+<body>
+    <div id="first">
+        <img src="124.png" width="90">
+    </div>
+<section class="banner">
+<div class="banner2">
+<div class="menu">
+<ul style="list-style-type:none">
+<li><a href="booking.html">BOOKINGS</a></li>
+<li><a href="login.html">LOG IN</a></li>
+<li><a href="track.html">TRACK YOUR TRAIN</a></li>
+<li><a href="contact.html">CONTACT US</a></li>
+</ul>
+</div>
+<br>
+<br>
+</div>
+<div class ="card-container">
+<div class="card">
+</div>
+<div class="content">
+<h2>WELCOME !</h2>
+<h3>SEARCH FOR TRAINS</h3>
+<form>
+<div class="formrow">
+<select name="FROM">
+<option value="select-location">Select Location</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Delhi">Delhi</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Kolkata">Kolkata</option>
+<option value="Chennai">Chennai</option>
+<option value="Goa">Goa</option>
+<option value="Bangalore">Bangalore</option>
+<option value="Lucknow">Lucknow</option>
+<option value="Vellore">Vellore</option>
+<option value="Hyderabad">Hyderabad</option>
+<option value="Siliguri">Siliguri</option>
+<option value="Pune">Pune</option>
+<option value="Surat">Surat</option>
+<option value="Jaipur">Jaipur</option>
+<option value="Kanpur">Kanpur</option>
+<option value="Kota">Kota</option>
+<option value="Agra">Agra</option>
+<option value="Bhopal">Bhopal</option>
+<option value="Patna">Patna</option>
+<option value="Coimbatore">Coimbatore</option>
+<option value="Indore">Indore</option>
+<option value="Varanasi">Varanasi</option>
+<option value="Allahabad">Allahabad</option>
+<option value="Madurai">Madurai</option>
+</select>
+<select name="To">
+<option value="To-select">To</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Delhi">Delhi</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Kolkata">Kolkata</option>
+<option value="Chennai">Chennai</option>
+<option value="Goa">Goa</option>
+<option value="Bangalore">Bangalore</option>
+<option value="Lucknow">Lucknow</option>
+<option value="Vellore">Vellore</option>
+<option value="Hyderabad">Hyderabad</option>
+<option value="Siliguri">Siliguri</option>
+<option value="Pune">Pune</option>
+<option value="Surat">Surat</option>
+<option value="Jaipur">Jaipur</option>
+<option value="Kanpur">Kanpur</option>
+<option value="Kota">Kota</option>
+<option value="Agra">Agra</option>
+<option value="Bhopal">Bhopal</option>
+<option value="Patna">Patna</option>
+<option value="Coimbatore">Coimbatore</option>
+<option value="Indore">Indore</option>
+<option value="Varanasi">Varanasi</option>
+<option value="Allahabad">Allahabad</option>
+<option value="Madurai">Madurai</option>
+</select>
+<input type="date">
+<input type="submit" value="Search">
+</div>
+</div>
+</div>
+</form>
+</section>
+</body>
+
+</html>

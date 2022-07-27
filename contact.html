@@ -1,0 +1,158 @@
+
+<!doctype html>
+<html>
+<head>
+ <title>contact</title>
+<style>
+*{
+margin:0;
+padding:0;
+}
+
+body{
+background:url("123.png") no-repeat center center fixed;
+background-size: cover;
+font-family: 'Heebo', sans-serif;
+}
+.container{
+background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 25%; 
+    right:25%;
+    opacity:0.9;
+    border-radius: 6px;
+}
+
+.contact-box{
+display:flex;
+opacity:0.9;
+border-radius: 15px;
+}
+
+.contact-left{
+flex-basis:40%;
+padding:20px;
+background:#ff7152;
+border-radius: 15px;
+}
+
+.contact-right h2{
+color:#ff7152;
+}
+
+.contact-right{
+padding:20px;
+background:white;
+border-radius: 15px;
+}
+
+.input-row input-group{
+display:flex;
+justify-content:space-between;
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+border:none;
+border-bottom:1px solid #000;
+outline:none;
+padding-bottom:5px;
+}
+
+textarea{
+width="100%";
+outline:none;
+border-bottom:1px solid #000;
+padding-bottom:5px;
+box-sizzing:border-box;
+}
+
+label{
+margin-bottom:6px;
+display:block;
+}
+
+.btn{
+    color: white;
+    cursor: pointer;
+    outline: none; 
+    margin-top: 20px;
+    padding: 10px 21px;
+    border: 1px solid #ff7152;
+    border-radius: 10px;
+    font-size: 18px;
+    background: #ff7152;
+    font-weight: bold;
+    
+}
+
+table{
+color:white;
+
+padding-right:40px;
+margin-top:20px;
+padding-top:20px;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<div class="contact-box">
+<div class="contact-left">
+<h2><center>CONTACT US !</center></h2>
+<table>
+<tr>
+<td>EMAIL</td>
+<td>railwayrevbs@gmail.com</td>
+</tr>
+<br>
+<br>
+<tr>
+<td>PHONE</td>
+<td>+91 8946671395</td>
+</tr>
+<br>
+<br>
+<tr>
+<td>ADDRESS</td>
+<td>MCM Boys Hostel No.1<br>
+Panjab University<br>
+Chandigarh-160014</td>
+</tr>
+</table>
+</div>
+
+<div class="contact-right">
+<h2>SEND MESSAGE</h2>
+<form>
+<div class="input-row">
+<label>First Name</label>
+<input type="text" placeholder="Bibhuti">
+</div>
+<div class="input-group">
+<label>Phone</label>
+<input type="text" placeholder ="+91 8672020303">
+</div>
+
+<div class="input-row">
+<label>Last Name</label>
+<input type="text" placeholder="Singha">
+</div>
+<div class="input-group">
+<label>Email</label>
+<input type="email" placeholder ="e.g xyz@gmail.com">
+</div>
+<label>Message</label>
+<textarea rows="5" placeholder="Type your message"></textarea>
+<br>
+<button class="btn">SUBMIT</button>
+</form>
+</div>
+</div>
+</div>
+
+</body>
+</html>
